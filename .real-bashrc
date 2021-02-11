@@ -1,0 +1,61 @@
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Below these lines are alias that can be used to make everyday tasks simple; such as the-
+# -ones that are listed below.
+# Alias list starts below
+
+aliases=(
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+export PATH="/usr/lib/ccache/bin/:$PATH"
+export FBFONT=/usr/share/kbd/consolefonts/ter-216n.psf.gz
+alias l=' ls -al '
+#alias l=' ls -al  ' 
+alias cl=' clear '
+#alias mk=' mkdir - '
+alias ufwstatus=' ufw status verbose '
+# alias pacman Syu ='  '
+alias cat=' cat -An  '
+alias w3m=' w3m https://www.duckduckgo.com/ '
+alias b43=' sudo modprobe b43 '
+alias Syu=' sudo pacman -Syu --noconfirm '
+alias tty-clock=' tty-clock -sSx '
+alias S=' -S '
+alias pc=' sudo pacman '
+alias Ss=' -Ss '
+alias so=' source '
+alias Sl=' -Sl '
+alias md=' mkdir -pv '
+alias cp=' cp -avr '
+# === The aliases that are below have to deal with Systemctl commands ===
+alias sysctl=' sudo systemctl '
+alias sysctl-en=' sudo systemctl enable '
+alias sys-dis=' sudo systemctl disable '
+alias sysctl-reen=' sudo systemctl reenable '
+alias sysctl-powoff=' sudo systemctl poweroff '
+alias sysctl-nate=' sudo systemctl hibernate '
+alias sysctl-hy-sleep=' sudo systemctl hybrid-sleep '
+alias vi=' sudo vim '
+alias nvi=' sudo nvim '
+alias sysctlennow=' sudo systemctl enable --now '
+# alias nocon=' --noconfirm '
+alias ya=' yay '
+alias nfetch=' neofetch '
+alias archy=' archey3 '
+alias mux=' tmux -2 '
+alias grub-mkconfig=' sudo grub-mkconfig -o /boot/grub/grub.cfg '
+alias sgit=' sudo git clone '
+alias top=' htop '
+alias yt=' sudo youtube-dl '
+
+)
+# alias ..=' cd .. '
+# alias //=' cd / '
+# alias ../.. =' cd ../.. '
+# alias ../../.. =' cd ../../.. '
+# NOTE: Alias that have been commmented out will either be used for something else; Or they will be deleted.
