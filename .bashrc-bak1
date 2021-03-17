@@ -1,0 +1,71 @@
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Below these lines are alias that can be used to make everyday tasks simple; such as the-
+# -ones that are listed below.
+# Alias list starts below
+
+alias ls='ls --color=auto'
+# PS1='[\u@\h \W]\$ '
+export PATH="/usr/lib/ccache/bin/:$PATH"
+export FBFONT=/usr/share/kbd/consolefonts/ter-216n.psf.gz
+alias l=' ls -al '
+alias clr=' clear '
+alias ufwstatus=' ufw status verbose '
+alias cat=' cat -An  '
+# alias w3m=' w3m https://www.duckduckgo.com/ '
+# alias b43=' sudo modprobe b43 '
+# alias Syu=' sudo pacman -Syu --noconfirm '
+alias tty-clock=' tty-clock -sSx '
+alias pc=' sudo pacman '
+alias so=' source '
+alias mkdir=' mkdir -pv '
+alias cp=' cp -avr '
+alias dvi=' doas nvim '
+alias nfetch=' neofetch '
+alias mux=' tmux -2 '
+alias grub-mkconfig=' doas grub-mkconfig -o /boot/grub/grub.cfg '
+alias sgit=' doas git clone '
+alias top=' htop '
+alias ytdl=' doas youtube-dl '
+## -- source files --
+alias sobash=' source ~/.bashrc '
+alias soxinit=' source ~/.xinitrc ' # When this command is issued; it is best to leave xorg session to get full effect of .xinitrc's changes.
+## -- End of source files --
+## -- config files --
+alias .xinitrc=' doas nvim .xinitrc '
+alias .bashrc=' doas nvim ~/.bashrc '
+alias .prebashrc=' doas nvim ~/.bashrc.pre-oh-my-bash '
+## -- End of config files --
+## -- Directory aliases --
+alias ABS=' cd ~/ABS/ '
+alias root=' cd / '
+alias bin=' cd /bin/ '
+alias boot=' cd /boot/ '
+alias dev=' cd /dev/ '
+alias etc=' cd /etc/ '
+alias home=' cd ~/ '
+alias lib=' cd /lib/ '
+alias lib64=' cd /lib64/ '
+alias mnt=' cd /mnt/ '
+alias opt=' cd /opt/ '
+alias proc=' cd /proc/ '
+alias run=' cd /run/ '
+alias sbin=' cd /sbin/ '
+alias srv=' cd /srv/ '
+alias sys=' cd /sys/ '
+alias tmp=' cd /tmp/ '
+alias usr=' cd /usr/ '
+alias var=' cd /var/ '
+alias dwm=' cd ~/ABS/dwm/dwm/ '
+## -- End of Directory aliases --
+## -- Change directory aliases --
+alias cdb1=' cd .. '
+alias cdb2=' cd ../.. '
+alias cdb3=' cd ../../.. '
+alias cdb4=' cd ../../../.. '
+## -- End of Change Directory aliases --
+# NOTE: Alias that have been commmented out will either be used for something else; Or they will be deleted.
